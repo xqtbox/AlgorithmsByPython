@@ -8,14 +8,15 @@ class ListNode:
 
 class Solution:
     def printListFromTailToHead(self, listNode):
-        if listNode.val == None:
-            return
-        l = []
+        # write code here
+        result =[]
+        if listNode == None:
+            return result
         head = listNode
         while head:
-            l.insert(0, head.val)
+            result.insert(0,head.val)
             head = head.next
-        return l
+        return result
 
 node1 = ListNode(10)
 node2 = ListNode(11)
